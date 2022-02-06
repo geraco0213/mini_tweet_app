@@ -1,3 +1,5 @@
+# coding: utf-8
+
 # 投稿内容を１行ずつ記述して配列にまとめます。
 posts = [
   '今日からRailsの学習を始めます。',
@@ -19,10 +21,8 @@ posts = [
 posts.each { |post| Post.create!(content: post) }
 
 # ユーザーをひとりずつ作成します。
-User.create!(name: 'フリーエンジニア君', email: 'engineer@email.com', image: 'user_1.png')
-User.create!(name: 'フリーデザイナーさん', email: 'designer@email.com', image: 'user_2.png')
-User.create!(name: 'アルパカさん', email: 'alpaca@email.com', image: 'user_3.png')
-User.create!(name: 'ゴリラくん', email: 'gorilla@email.com', image: 'user_4.png')
-User.create!(name: 'セレブエンジニアさん', email: 'celeb@email.com', image: 'user_5.png')
-
-
+User.create!(name: 'フリーエンジニア君', email: 'engineer@email.com', image: 'user_1.png', password: 'foobar')
+User.create!(name: 'フリーデザイナーさん', email: 'designer@email.com', image: 'user_2.png', password: 'foobar')
+User.create!(name: 'アルパカさん', email: 'alpaca@email.com', image: 'user_3.png', password: 'foobar')
+User.create!(name: 'ゴリラくん', email: 'gorilla@email.com', image: 'user_4.png', password: 'foobar')
+User.create!(name: 'セレブエンジニアさん', email: 'celeb@email.com', image: 'user_5.png', password: 'foobar')
