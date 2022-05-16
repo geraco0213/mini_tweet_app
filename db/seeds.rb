@@ -16,3 +16,6 @@ User.create!(name: 'フリーデザイナーさん', email: 'designer@email.com'
 User.create!(name: 'アルパカさん', email: 'alpaca@email.com', image: 'user_3.png', password: 'foobar')
 User.create!(name: 'ゴリラくん', email: 'gorilla@email.com', image: 'user_4.png', password: 'foobar')
 User.create!(name: 'セレブエンジニアさん', email: 'celeb@email.com', image: 'user_5.png', password: 'foobar')
+
+
+puts "created!"
